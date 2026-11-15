@@ -2,6 +2,8 @@
 
 **By Abhishek** · [@GrayHatCoder](https://github.com/GrayHatCoder)
 
+**Live demo: [abhishek-zomato-ai-analytics.streamlit.app](https://abhishek-zomato-ai-analytics.streamlit.app)** (if it has been idle, the first load wakes it up and rebuilds the warehouse in about a minute)
+
 A complete batch data pipeline that takes Zomato-style food-delivery data from raw CSVs all the way to AI-powered analytics. It runs in two ways:
 
 | | **Local mode** (runs on any laptop in about 30 seconds) | **Cloud mode** (production stack) |
