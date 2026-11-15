@@ -1,0 +1,11 @@
+# dbt profile for the LOCAL run (DuckDB). No secrets here, so it is safe to commit.
+# The Snowflake (cloud) run keeps using zomato/profiles.yml as in the original setup.
+zomato:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      # run_pipeline.py sets DUCKDB_PATH to an absolute path; the default works when dbt runs from zomato/
+      path: "{{ env_var('DUCKDB_PATH', '../warehouse/zomato.duckdb') }}"
+      schema: main
+      threads: 4

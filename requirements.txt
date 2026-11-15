@@ -1,0 +1,12 @@
+# Local run (no cloud accounts needed):  pip install -r requirements.txt
+duckdb>=1.4
+dbt-core>=1.10
+dbt-duckdb>=1.10
+pandas>=2.2
+numpy>=1.26
+pyarrow>=15
+streamlit>=1.45
+plotly>=5.20
+scikit-learn>=1.4
+openai>=1.40
+python-dotenv>=1.0

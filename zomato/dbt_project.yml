@@ -18,6 +18,11 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
+# Local (DuckDB) runs: create Snowflake-compatible functions so the same models work on both.
+# On Snowflake this hook is a no-op. See macros/duckdb_compat.sql.
+on-run-start:
+  - "{{ duckdb_compat() }}"
+
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"

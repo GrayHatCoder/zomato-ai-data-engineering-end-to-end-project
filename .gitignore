@@ -28,3 +28,7 @@ venv/
 
 # Generated outputs
 ai/review_embeddings.parquet
+
+# Local run outputs (rebuilt by `python run_pipeline.py`)
+warehouse/
+.streamlit/secrets.toml
